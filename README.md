@@ -1,36 +1,80 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Birthday Calendar for Mariam
 
-## Getting Started
+This project is a personalized calendar app created as a birthday gift for Mariam. It allows her to explore daily notes and reflections written for her in an interactive format.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Introduction Page:** A welcoming homepage introducing the purpose of the app.
+- **Interactive Calendar:** Displays a user-friendly calendar where Mariam can select a day to view personalized notes.
+- **Daily Notes:** For each day, a special note or reflection will be shown upon selection.
+- **Light/Dark Mode:** The app dynamically adapts to light or dark themes with a navy blue-based palette, Mariam's favorite color.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Tech Stack
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Next.js**: Leveraging the App Router for modern server and client component rendering.
+- **React Calendar**: An interactive calendar component for seamless date selection.
+- **TypeScript**: Ensuring type safety and improved development experience.
+- **Tailwind CSS**: For fast, responsive, and beautiful UI styling.
+- **Vercel**: Deployment platform for fast and scalable hosting.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Project Structure
 
-## Learn More
+- `src/app/page.tsx`: Home page (introduction).
+- `src/app/calendar/page.tsx`: Interactive calendar page.
+- `src/components/ClientCalendar.tsx`: Handles client-side interactivity for the calendar.
+- `src/app/layout.tsx`: Defines global layout and includes the navigation bar.
+- `src/app/globals.css`: Custom global styles including the navy blue color palette.
 
-To learn more about Next.js, take a look at the following resources:
+## Installation and Setup
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Follow these steps to set up and run the project locally:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/your-username/birthday-calendar.git
+   cd birthday-calendar
+   ```
 
-## Deploy on Vercel
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+3. **Run the development server:**
+   ```bash
+   npm run dev
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+   The app will be available at [http://localhost:3000](http://localhost:3000).
+
+4. **Build the app for production (optional):**
+   ```bash
+   npm run build
+   ```
+
+5. **Preview the production build (optional):**
+   ```bash
+   npm run start
+   ```
+
+## How to Use
+
+1. Visit the homepage to see a warm introduction.
+2. Navigate to the calendar by clicking "Calendar" in the navigation bar.
+3. Click on any day in the calendar to read the note or reflection for that day.
+
+## Deployment
+
+This app is deployed on **Vercel** for fast and seamless access. Any changes pushed to the `main` branch are automatically deployed.
+
+## Screenshots
+
+### Home Page
+A simple and warm introduction to the app.
+
+### Calendar Page
+The interactive calendar with a navy blue-themed design.
+
+## License
+
+This project is a personal gift and is not intended for commercial use.
