@@ -3,14 +3,20 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #f0f4ff; /* Light Navy Tint */
+  --foreground: #171717; /* Dark Text */
+  --primary: #001f54; /* Navy Blue */
+  --secondary: #87a3d1; /* Light Blue Accent */
+  --accent: #003366; /* Deep Navy */
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #001f54; /* Navy Blue */
+    --foreground: #e0e8ff; /* Light Text on Navy */
+    --primary: #003366; /* Deep Navy */
+    --secondary: #87a3d1; /* Light Blue Accent */
+    --accent: #0a74da; /* Brighter Accent for Dark Mode */
   }
 }
 
@@ -19,3 +25,32 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--primary);
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+button {
+  background-color: var(--primary);
+  color: var(--foreground);
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--accent);
+}
+
