@@ -14,7 +14,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 flex items-center justify-between">
         {/* Logo / Title */}
         <div className="text-white font-bold text-xl sm:text-2xl">
-          Mariam’s Diaries
+          For, My Love
         </div>
 
         {/* Nav Links */}
