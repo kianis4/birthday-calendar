@@ -1,44 +1,55 @@
+/* globals.css */
+
+/* Tailwind Core Setup */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* Color Variables */
 :root {
   --background: #f0f4ff; /* Light Navy Tint */
   --foreground: #171717; /* Dark Text */
-  --primary: #001f54; /* Navy Blue */
-  --secondary: #87a3d1; /* Light Blue Accent */
-  --accent: #003366; /* Deep Navy */
+  --primary: #001f54;    /* Navy Blue */
+  --secondary: #87a3d1;  /* Light Blue Accent */
+  --accent: #003366;     /* Deep Navy */
 }
 
+/* Dark Mode */
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #001f54; /* Navy Blue */
-    --foreground: #e0e8ff; /* Light Text on Navy */
-    --primary: #003366; /* Deep Navy */
-    --secondary: #87a3d1; /* Light Blue Accent */
-    --accent: #0a74da; /* Brighter Accent for Dark Mode */
+    --background: #001f54;   /* Navy Blue */
+    --foreground: #e0e8ff;   /* Lighter Text on Navy */
+    --primary: #003366;      /* Deep Navy */
+    --secondary: #87a3d1;    /* Light Blue Accent */
+    --accent: #0a74da;       /* Brighter Accent for Dark Mode */
   }
 }
 
+/* Base Styles */
 body {
   color: var(--foreground);
-  background: var(--background);
+  background-color: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
+/* Headings */
 h1, h2, h3, h4, h5, h6 {
   color: var(--primary);
+  margin-top: 0; /* Ensure heading doesn't get extra default spacing from user agent */
 }
 
+/* Links */
 a {
   color: var(--accent);
   text-decoration: none;
 }
-
 a:hover {
   text-decoration: underline;
 }
 
+/* Buttons */
 button {
   background-color: var(--primary);
   color: var(--foreground);
@@ -49,25 +60,46 @@ button {
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
-
 button:hover {
   background-color: var(--accent);
 }
 
+/* Navbar Specific (Optional)
+   If you want your <nav> to seamlessly fit the color scheme, you can override here.
+   E.g., if you want the nav's background to be var(--primary) in light mode, etc.
+   Or rely on the Tailwind classes in your Navbar component.
+*/
+
+/* react-calendar Overrides */
 .react-calendar {
-  background-color: black !important; /* Force black background */
+  background-color: #171717 !important; /* Instead of black, use foreground or a neutral dark color */
+  color: #fff; /* White text to contrast the dark background */
+  border-radius: 8px; /* Slight rounding for a smoother look */
 }
 .react-calendar__navigation button {
-  background-color: black !important; /* Force black background */
+  background-color: inherit !important; /* Use the parent's background */
+  color: inherit !important; /* Keep text color consistent */
+}
+.react-calendar__navigation button:hover {
+  filter: brightness(1.2);
 }
 .react-calendar__navigation button:disabled {
-  background-color: black !important;
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.react-calendar__tile {
+  background-color: transparent !important; /* Matches the parent's background */
+  color: inherit !important;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+.react-calendar__tile:hover:not(:disabled) {
+  background-color: rgba(255, 255, 255, 0.1) !important; /* Light highlight on hover */
 }
 .react-calendar__tile:disabled {
-  background-color: black !important; /* Force black background */
+  opacity: 0.4;
 }
 .react-calendar__month-view__days__day--weekend {
-  color: inherit; /* Resets to inherit the parent's color */
+  color: inherit; /* Make weekend days consistent with the rest of the text color */
 }
-
 

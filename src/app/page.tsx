@@ -2,8 +2,8 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="flex flex-col items-center justify-center min-h-screen bg-blue-50 p-6 sm:p-8">
-      <h1 className="text-4xl sm:text-5xl font-bold text-center text-primary mb-4">
+    <main className="font-romantic flex flex-col items-center justify-center min-h-screen bg-blue-50 p-6 sm:p-8">
+      <h1 className="font-romantic text-4xl sm:text-5xl font-bold text-center text-primary mb-4">
         Welcome to Mariam’s Birthday Calendar ❤️
       </h1>
       <p className="mt-2 text-lg sm:text-xl text-gray-700 max-w-2xl text-center leading-relaxed">
