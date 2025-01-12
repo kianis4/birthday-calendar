@@ -81,7 +81,7 @@ export default function CalendarPage() {
   };
 
   return (
-    <main className="font-romantic flex flex-col items-center justify-center p-4 sm:p-8 bg-gray-50 min-h-screen">
+    <main className="font-romantic flex flex-col items-center justify-center p-4 sm:p-8 bg-blue-50 min-h-screen">
       <div className="max-w-xl w-full text-center mb-8">
         <h1 className="text-3xl sm:text-4xl font-bold text-primary mb-2">
           Welcome to Mariam’s Birthday Calendar ❤️
