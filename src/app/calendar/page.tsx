@@ -50,6 +50,7 @@ export default function CalendarPage() {
         </p>
         <p className="text-gray-700 mt-3">
           <em>Thank you for being the reason behind every page, every word, and every prayer.</em>
+          <em>P.S. I think you should start with January 8th but it's up too you</em>
         </p>
       </div>
 
