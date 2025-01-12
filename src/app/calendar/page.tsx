@@ -93,8 +93,8 @@ export default function CalendarPage() {
           and every crazy way I’ve come to love you.
         </p>
         <p className="text-gray-700 mt-3">
-          So go ahead—pick a day, read an entry, and step into my head for a moment (I recommend
-          starting with January 8). Know that this entire calendar is proof that you’re never off
+          So go ahead—pick a day, read an entry, and step into my head for a moment <strong>(I recommend
+            starting with January 8)</strong>. Know that this entire calendar is proof that you’re never off
           my mind. No matter which date you tap, you’ll find me there—loving you, praying for you,
           and dreaming about our future.
         </p>
