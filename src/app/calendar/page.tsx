@@ -6,6 +6,8 @@ import '@fontsource/playfair-display';
 import { useState, Suspense } from "react";
 import Calendar from "react-calendar";
 import "react-calendar/dist/Calendar.css";
+MDXProviderComponents
+// @ts-ignore
 import { MDXProvider, MDXProviderComponents } from "@mdx-js/react";
 import { diaryEntries } from "../../Diary/diaryEntries";
 
@@ -19,7 +21,9 @@ const LoadingFallback = () => <p>Loading...</p>;
  * That way, you don't have to edit each .mdx; any existing <p> or <time> in them
  * will inherit these styles automatically.
  */
-const mdxComponents: MDXProviderComponents = {
+
+const mdxComponents:  MDXProviderComponents = {
+  // @ts-ignore
   h1: (props) => (
     <h1 
       {...props} 
@@ -32,6 +36,7 @@ const mdxComponents: MDXProviderComponents = {
       "
     />
   ),
+  // @ts-ignore
   h2: (props) => (
     <h2
       {...props}
@@ -44,6 +49,7 @@ const mdxComponents: MDXProviderComponents = {
     />
   ),
   // Keep or extend other overrides for <p> / <time> / etc.
+  // @ts-ignore
   p: (props) => (
     <p {...props} className="mb-4 leading-relaxed" />
   ),
