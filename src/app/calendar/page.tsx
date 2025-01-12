@@ -44,13 +44,12 @@ export default function CalendarPage() {
           you’ll find laughter, doubts, confessions, and every crazy way I’ve come to love you.
         </p>
         <p className="text-gray-700 mt-3">
-          So go ahead—pick a day, read an entry, and step into my head for a moment. 
+          So go ahead—pick a day, read an entry, and step into my head for a moment (I recommend starting with January 8). 
           Know that this entire calendar is proof that you’re never off my mind. 
           No matter which date you tap, you’ll find me there—loving you, praying for you, and dreaming about our future.
         </p>
         <p className="text-gray-700 mt-3">
           <em>Thank you for being the reason behind every page, every word, and every prayer.</em>
-          <em>P.S. I think you should start with January 8th but it's up too you</em>
         </p>
       </div>
 
